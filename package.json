@@ -1,0 +1,25 @@
+{
+	"name": "dectalk-tts",
+	"version": "0.1.0-alpha.0",
+	"description": "API wrapper for the Dectalk TTS system",
+	"keywords": [
+		"dectalk",
+		"tts",
+		"api",
+		"text-to-speech",
+		"wav"
+	],
+	"homepage": "https://github.com/JstnMcBrd/dectalk-tts",
+	"bugs": "https://github.com/JstnMcBrd/dectalk-tts/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JstnMcBrd/dectalk-tts.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Justin McBride",
+	"type": "module",
+	"scripts": {
+	},
+	"devDependencies": {
+	}
+}
