@@ -18,12 +18,32 @@
 	"license": "Apache-2.0",
 	"author": "Justin McBride",
 	"type": "module",
+	"exports": {
+		"types": {
+			"require": "./dist/index.d.cts",
+			"default": "./dist/index.d.ts"
+		},
+		"default": {
+			"require": "./dist/index.cjs",
+			"default": "./dist/index.js"
+		}
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
+		"build": "tsc",
 		"lint": "eslint .",
 	},
 	"devDependencies": {
 		"@jstnmcbrd/eslint-config": "^1.0.0",
+		"@types/node": "^20.11.17",
 		"eslint": "^8.56.0",
 		"typescript": "^5.3.3",
+	},
+	"engines": {
+		"node": ">=18"
 	}
 }

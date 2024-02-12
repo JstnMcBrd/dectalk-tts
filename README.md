@@ -11,6 +11,31 @@
 
 [aeiou](https://github.com/calzoneman/aeiou) is a third-party web API that makes interacting with Dectalk much easier.
 
+## Prerequesites
+
+This package has no production dependencies!
+
+However, it does require Node 18 or higher. Use `node --version` to check your node version.
+
+## Installation
+
+`npm install dectalk-tts`
+
+## Usage
+
+If the API returns a non-200 response, an error will be thrown.
+None of the examples below include error handling, but don't forget it!
+
+### ES Modules
+
+```js
+import dectalk from 'dectalk-tts';
+import { writeFileSync } from 'node:fs';
+
+const output = await dectalk('aeiou');
+writeFileSync('output.wav', output);
+```
+
 ## Development
 
 When a merge request is created, the changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
