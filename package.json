@@ -19,7 +19,11 @@
 	"author": "Justin McBride",
 	"type": "module",
 	"scripts": {
+		"lint": "eslint .",
 	},
 	"devDependencies": {
+		"@jstnmcbrd/eslint-config": "^1.0.0",
+		"eslint": "^8.56.0",
+		"typescript": "^5.3.3",
 	}
 }
