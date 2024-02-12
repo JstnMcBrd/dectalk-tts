@@ -11,6 +11,13 @@
 
 [aeiou](https://github.com/calzoneman/aeiou) is a third-party web API that makes interacting with Dectalk much easier.
 
+> <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
+>
+> This package sends all input to a third-party API, which could be a possible privacy concern!
+> By using this package, you acknowledge and agree to not hold the author of this package liable for how the third party uses your data.
+>
+> Please read the [usage guidelines](https://github.com/calzoneman/aeiou/blob/master/docs/usage-guidelines.md) of the API.
+
 ## Prerequesites
 
 This package has no production dependencies!
