@@ -36,6 +36,22 @@ const output = await dectalk('aeiou');
 writeFileSync('output.wav', output);
 ```
 
+### CommonJS
+
+```js
+const dectalk = require('dectalk-tts');
+const { writeFileSync } = require('node:fs');
+
+(async () => {
+	const output = await dectalk('John Madden');
+	writeFileSync('output.wav', output);
+})();
+
+// or
+
+dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', output));
+```
+
 ## Development
 
 When a merge request is created, the changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
