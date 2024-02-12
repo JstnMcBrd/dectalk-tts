@@ -52,6 +52,14 @@ const { writeFileSync } = require('node:fs');
 dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', output));
 ```
 
+### Options
+
+Please see Chapter 2 of the [Dectalk guide PDF](docs/dtk_reference_guide.pdf) for details on how to customize your requests. You can choose different voices, have Dectalk sing, and more!
+
+None of these options are hard-coded into this package, so you must format the request string yourself.
+
+(The Dectalk guide PDF was copied from the Dectalk 4.61 release download, which can be found [here](https://theflameofhope.co/dectalkreader1/).)
+
 ## Development
 
 When a merge request is created, the changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
