@@ -1,5 +1,6 @@
 # dectalk-tts
 
+[![API status](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api.yml/badge.svg)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api.yml)
 [![npm package](https://badge.fury.io/js/dectalk-tts.svg)](https://badge.fury.io/js/dectalk-tts)
 
 ## About
@@ -10,3 +11,12 @@
 
 [aeiou](https://github.com/calzoneman/aeiou) is a third-party web API that makes interacting with Dectalk much easier.
 
+## Development
+
+When a merge request is created, the changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
+
+GitHub will also periodically run a test to confirm the API is still working. You can run this test manually with `npm run test-api`.
+
+When a new [Release](https://github.com/JstnMcBrd/dectalk-tts/releases) is created, GitHub will automatically deploy the new version to the [npm registry](https://npmjs.com/package/dectalk-tts).
+
+This project abides by [Semantic Versioning](https://semver.org/) and [Keep A Changelog](https://keepachangelog.com/). To see a list of changes for each update, check the description of [releases on GitHub](https://github.com/JstnMcBrd/dectalk-tts/releases).

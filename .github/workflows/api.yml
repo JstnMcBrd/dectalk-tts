@@ -1,0 +1,29 @@
+name: API status
+# Checks whether the API is active and working on a regular schedule
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # once a day
+  workflow_dispatch:
+
+jobs:
+  api-status:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+
+        - name: Setup node
+          uses: actions/setup-node@v4
+          with:
+            node-version-file: '.nvmrc'
+      
+        - name: Install dependencies
+          run: npm install
+
+        - name: Test API
+          run: npm run test-api -- --pool=forks
+          # --pool=forks is necessary to prevent random timeouts
+          # https://github.com/JstnMcBrd/delphi-ai/issues/26
+          # https://github.com/vitest-dev/vitest/issues/2008#issuecomment-1871066901
