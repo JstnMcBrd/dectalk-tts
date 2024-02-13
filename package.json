@@ -3,11 +3,11 @@
 	"version": "1.0.1",
 	"description": "API wrapper for the Dectalk TTS system",
 	"keywords": [
-		"dectalk",
-		"tts",
 		"api",
 		"text-to-speech",
-		"wav"
+		"tts",
+		"wav",
+		"dectalk"
 	],
 	"homepage": "https://github.com/JstnMcBrd/dectalk-tts",
 	"bugs": "https://github.com/JstnMcBrd/dectalk-tts/issues",
