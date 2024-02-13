@@ -1,5 +1,5 @@
 import { Buffer } from 'node:buffer';
-import { URL, URLSearchParams } from 'node:url';
+import { URL } from 'node:url';
 
 /**
  * @param text The text to send to the aeiou Dectalk API
@@ -16,7 +16,7 @@ export default async function dectalk(text: string): Promise<Buffer> {
 
 	// Format request URL
 	const url = new URL('https://tts.cyzon.us/tts');
-	url.search = new URLSearchParams({ text }).toString();
+	url.searchParams.append('text', text);
 
 	// Send request
 	const response = await fetch(url);
