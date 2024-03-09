@@ -1,7 +1,7 @@
 # dectalk-tts
 
-[![API status](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api.yml/badge.svg)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api.yml)
-[![npm package](https://badge.fury.io/js/dectalk-tts.svg)](https://badge.fury.io/js/dectalk-tts)
+[![API status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/api.yml?logo=github&label=API%20status)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api.yml)
+[![Validate](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/validate.yml?logo=github&label=Validate)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/validate.yml)
 
 ## About
 
