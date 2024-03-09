@@ -2,6 +2,13 @@
 
 [![API status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/api.yml?logo=github&label=API%20status)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api.yml)
 [![Validate](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/validate.yml?logo=github&label=Validate)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/validate.yml)
+<br />
+[![NPM Version](https://img.shields.io/npm/v/dectalk-tts)](https://www.npmjs.com/package/dectalk-tts)
+[![NPM License](https://img.shields.io/npm/l/dectalk-tts)](./LICENSE)
+![NPM Type Definitions](https://img.shields.io/npm/types/dectalk-tts)
+![NPM Downloads](https://img.shields.io/npm/dt/dectalk-tts)
+<br />
+![Node version](https://img.shields.io/node/v/dectalk-tts)
 
 ## About
 
