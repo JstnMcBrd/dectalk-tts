@@ -1,13 +1,12 @@
 import { Buffer } from 'node:buffer';
 import { basename } from 'node:path';
-import type { URL } from 'node:url';
 
 import { afterAll, describe, expect, it, vi } from 'vitest';
 
 import dectalk from './index.js';
 
 describe(basename(import.meta.url), () => {
-	const fetchMock = vi.fn<URL[], Promise<Response>>();
+	const fetchMock = vi.fn<typeof fetch>();
 	vi.stubGlobal('fetch', fetchMock);
 
 	const goodResponseBuffer = new ArrayBuffer(0);
