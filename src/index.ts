@@ -1,3 +1,6 @@
+import { Buffer } from 'node:buffer';
+import { URL } from 'node:url';
+
 /**
  * @param text The text to send to the aeiou Dectalk API
  * @returns A buffer containing wav-encoded binary output
