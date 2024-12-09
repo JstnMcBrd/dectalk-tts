@@ -12,7 +12,7 @@
 
 ## About
 
-**dectalk-tts** is a simple [Node](https://nodejs.org/) package to interact with the **aeiou** Dectalk web API. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
+**dectalk-tts** is a simple package to interact with the **aeiou** Dectalk web API. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
 
 [Dectalk](https://github.com/dectalk/dectalk) is a text-to-speech engine originally created in the 1980s. Today, it is best known for [viral videos](https://www.youtube.com/watch?v=Hv6RbEOlqRo) of the game [Moonbase Alpha](https://store.steampowered.com/app/39000/Moonbase_Alpha/).
 
@@ -27,9 +27,7 @@
 
 ## Prerequesites
 
-This package has no production dependencies!
-
-However, it does require Node 18 or higher. Use `node --version` to check your node version.
+This package has no production dependencies, and works with Node (`>=18`) or the browser.
 
 ## Installation
 
@@ -44,26 +42,28 @@ None of the examples below include error handling, but don't forget it!
 
 ```js
 import dectalk from 'dectalk-tts';
+import { Buffer } from 'node:buffer';
 import { writeFileSync } from 'node:fs';
 
 const output = await dectalk('aeiou');
-writeFileSync('output.wav', output);
+writeFileSync('output.wav', Buffer.from(output));
 ```
 
 ### CommonJS
 
 ```js
 const dectalk = require('dectalk-tts');
+const { Buffer } = require('node:buffer');
 const { writeFileSync } = require('node:fs');
 
 (async () => {
 	const output = await dectalk('John Madden');
-	writeFileSync('output.wav', output);
+	writeFileSync('output.wav', Buffer.from(output));
 })();
 
 // or
 
-dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', output));
+dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', Buffer.from(output)));
 ```
 
 ### Options

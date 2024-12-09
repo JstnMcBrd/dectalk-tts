@@ -1,6 +1,6 @@
 {
 	"name": "dectalk-tts",
-	"version": "1.0.2-alpha",
+	"version": "2.0.0-alpha",
 	"description": "API wrapper for the Dectalk TTS system",
 	"keywords": [
 		"api",

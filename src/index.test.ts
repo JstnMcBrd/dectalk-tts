@@ -1,4 +1,3 @@
-import { Buffer } from 'node:buffer';
 import { basename } from 'node:path';
 
 import { afterAll, describe, expect, it, vi } from 'vitest';
@@ -35,7 +34,7 @@ describe(basename(import.meta.url), () => {
 	it('should return the buffer if it receives a good response', async () => {
 		fetchMock.mockResolvedValue(goodResponse);
 		const output = await dectalk('test');
-		expect(output).toEqual(Buffer.from(goodResponseBuffer));
+		expect(output).toEqual(goodResponseBuffer);
 	});
 
 	it('should throw an error if it receives a bad response', async () => {

@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 import { readFileSync } from 'node:fs';
 import { basename } from 'node:path';
 
@@ -7,7 +8,9 @@ import dectalk from '../src/index.js';
 
 describe(basename(import.meta.url), () => {
 	it('should succeed', async () => {
-		const actual = await dectalk('test');
+		const actual = Buffer.from(
+			await dectalk('test'),
+		);
 		const expected = readFileSync('./test/test.wav');
 		expect(actual).toEqual(expected);
 	});
