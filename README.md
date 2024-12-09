@@ -44,26 +44,28 @@ None of the examples below include error handling, but don't forget it!
 
 ```js
 import dectalk from 'dectalk-tts';
+import { Buffer } from 'node:buffer';
 import { writeFileSync } from 'node:fs';
 
 const output = await dectalk('aeiou');
-writeFileSync('output.wav', output);
+writeFileSync('output.wav', Buffer.from(output));
 ```
 
 ### CommonJS
 
 ```js
 const dectalk = require('dectalk-tts');
+const { Buffer } = require('node:buffer');
 const { writeFileSync } = require('node:fs');
 
 (async () => {
 	const output = await dectalk('John Madden');
-	writeFileSync('output.wav', output);
+	writeFileSync('output.wav', Buffer.from(output));
 })();
 
 // or
 
-dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', output));
+dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', Buffer.from(output)));
 ```
 
 ### Options

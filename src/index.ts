@@ -1,13 +1,10 @@
-import { Buffer } from 'node:buffer';
-import { URL } from 'node:url';
-
 /**
  * @param text The text to send to the aeiou Dectalk API
- * @returns A buffer containing wav-encoded binary output
+ * @returns An array buffer containing wav-encoded binary output
  * @throws If `text` is empty or only whitespace
  * @throws If the API returns a non-200 response
  */
-export default async function dectalk(text: string): Promise<Buffer> {
+export default async function dectalk(text: string): Promise<ArrayBuffer> {
 	// The API does not like empty prompts
 	text = text.trim();
 	if (text.length === 0) {
@@ -28,6 +25,5 @@ export default async function dectalk(text: string): Promise<Buffer> {
 	}
 
 	// Parse and return response
-	const binaryData = await response.arrayBuffer();
-	return Buffer.from(binaryData);
+	return await response.arrayBuffer();
 }
