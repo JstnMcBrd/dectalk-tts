@@ -1,7 +1,7 @@
 # dectalk-tts
 
-[![API status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/api.yml?logo=github&label=API%20status)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api.yml)
-[![Validate](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/validate.yml?logo=github&label=Validate)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/validate.yml)
+[![API Status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/api-status.yml?logo=github&label=API%20Status)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api-status.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/ci.yml?logo=github&label=CI)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/ci.yml)
 <br />
 [![NPM Version](https://img.shields.io/npm/v/dectalk-tts)](https://www.npmjs.com/package/dectalk-tts)
 [![NPM License](https://img.shields.io/npm/l/dectalk-tts)](./LICENSE)
