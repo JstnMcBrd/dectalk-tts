@@ -82,4 +82,4 @@ GitHub will also periodically run a test to confirm the API is still working. Yo
 
 When a new [Release](https://github.com/JstnMcBrd/dectalk-tts/releases) is created, GitHub will automatically deploy the new version to the [npm registry](https://npmjs.com/package/dectalk-tts).
 
-This project abides by [Semantic Versioning](https://semver.org/) and [Keep A Changelog](https://keepachangelog.com/). To see a list of changes for each update, check the description of [releases on GitHub](https://github.com/JstnMcBrd/dectalk-tts/releases).
+This project abides by [Semantic Versioning](https://semver.org/) and [Keep A Changelog](https://keepachangelog.com/).
