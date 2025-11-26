@@ -17,9 +17,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add badges for workflow statuses, package details, etc to README ([#8](https://github.com/JstnMcBrd/dectalk-tts/pull/8))
 - Add a `CHANGELOG.md` file ([#101](https://github.com/JstnMcBrd/dectalk-tts/pull/101))
 
+### Removed
+
+- Remove redundant `"main"` and `"types"` fields from `package.json` ([#37](https://github.com/JstnMcBrd/dectalk-tts/pull/37))
+
 ### Fixed
 
 - Fix broken Dectalk 4.61 release download link in README ([#11](https://github.com/JstnMcBrd/dectalk-tts/pull/11))
+- Fix exports field in `package.json` ([#110](https://github.com/JstnMcBrd/dectalk-tts/pull/110))
 
 ## [1.0.1] - 2024-02-12
 
