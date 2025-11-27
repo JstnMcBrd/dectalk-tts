@@ -21,7 +21,10 @@ export default async function dectalk(text: string): Promise<ArrayBuffer> {
 	// TODO look into custom behavior for aeiou's error codes
 	// https://github.com/calzoneman/aeiou/blob/master/docs/usage-guidelines.md
 	if (!response.ok) {
-		throw new Error(`${response.status} ${response.statusText}`, { cause: response });
+		throw new Error(
+			`${response.status.toString()} ${response.statusText}`,
+			{ cause: response },
+		);
 	}
 
 	// Parse and return response
