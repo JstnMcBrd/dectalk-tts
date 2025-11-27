@@ -5,6 +5,6 @@
  * @throws If the API returns a non-200 response
  */
 export = async function dectalk(input: string): Promise<ArrayBuffer> {
-	const dectalk = (await import('./index.js')).default;
-	return await dectalk(input);
+	const dectalkEsm = (await import('./index.js')).default;
+	return await dectalkEsm(input);
 };
