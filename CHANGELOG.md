@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Breaking:** return `ArrayBuffer` (runtime-agnostic) instead of `Buffer` (Node-specific) ([#44](https://github.com/JstnMcBrd/dectalk-tts/pull/44))
 - Update README to include browser-compatiblity ([#44](https://github.com/JstnMcBrd/dectalk-tts/pull/44))
+- Use ISC license ([#121](https://github.com/JstnMcBrd/dectalk-tts/pull/121))
 
 ### Added
 
