@@ -25,10 +25,10 @@ describe(basename(import.meta.url), () => {
 	});
 
 	it('should throw an error if given an empty or whitespace-only prompt', async () => {
-		await expect(dectalk('')).rejects.toThrowError();
-		await expect(dectalk(' ')).rejects.toThrowError();
-		await expect(dectalk('\t')).rejects.toThrowError();
-		await expect(dectalk('\n')).rejects.toThrowError();
+		await expect(dectalk('')).rejects.toThrow();
+		await expect(dectalk(' ')).rejects.toThrow();
+		await expect(dectalk('\t')).rejects.toThrow();
+		await expect(dectalk('\n')).rejects.toThrow();
 	});
 
 	it('should return the buffer if it receives a good response', async () => {
@@ -39,6 +39,6 @@ describe(basename(import.meta.url), () => {
 
 	it('should throw an error if it receives a bad response', async () => {
 		fetchMock.mockResolvedValue(badResponse);
-		await expect(dectalk('test')).rejects.toThrowError();
+		await expect(dectalk('test')).rejects.toThrow();
 	});
 });
