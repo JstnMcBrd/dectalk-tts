@@ -1,14 +1,11 @@
 # dectalk-tts
 
 [![API Status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/api-status.yml?logo=github&label=API%20Status)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/api-status.yml)
-[![CI](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/dectalk-tts/ci.yml?logo=github&label=CI)](https://github.com/JstnMcBrd/dectalk-tts/actions/workflows/ci.yml)
-<br />
-[![NPM Version](https://img.shields.io/npm/v/dectalk-tts)](https://www.npmjs.com/package/dectalk-tts)
-[![NPM License](https://img.shields.io/npm/l/dectalk-tts)](./LICENSE)
-![NPM Type Definitions](https://img.shields.io/npm/types/dectalk-tts)
-![NPM Downloads](https://img.shields.io/npm/dt/dectalk-tts)
-<br />
-![Node version](https://img.shields.io/node/v/dectalk-tts)
+<br>
+[![npm version](https://img.shields.io/npm/v/dectalk-tts)](https://www.npmjs.com/package/dectalk-tts)
+![node version](https://img.shields.io/node/v/dectalk-tts)
+[![npm license](https://img.shields.io/npm/l/dectalk-tts)](./LICENSE)
+![npm downloads](https://img.shields.io/npm/dt/dectalk-tts)
 
 ## About
 
@@ -27,7 +24,7 @@
 
 ## Prerequesites
 
-This package has no production dependencies, and works with Node (`>=18`) or the browser.
+This package has no production dependencies, and works with Node.js (`>=18`) or the browser.
 
 ## Installation
 
@@ -43,10 +40,10 @@ None of the examples below include error handling, but don't forget it!
 ```js
 import dectalk from 'dectalk-tts';
 import { Buffer } from 'node:buffer';
-import { writeFileSync } from 'node:fs';
+import { writeFile } from 'node:fs/promises';
 
 const output = await dectalk('aeiou');
-writeFileSync('output.wav', Buffer.from(output));
+await writeFile('output.wav', Buffer.from(output));
 ```
 
 ### CommonJS
@@ -54,16 +51,18 @@ writeFileSync('output.wav', Buffer.from(output));
 ```js
 const dectalk = require('dectalk-tts');
 const { Buffer } = require('node:buffer');
-const { writeFileSync } = require('node:fs');
+const { writeFile } = require('node:fs/promises');
 
 (async () => {
 	const output = await dectalk('John Madden');
-	writeFileSync('output.wav', Buffer.from(output));
+	await writeFile('output.wav', Buffer.from(output));
 })();
 
 // or
 
-dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', Buffer.from(output)));
+dectalk('uuuuuuuuuu').then((output) => {
+	writeFile('output.wav', Buffer.from(output))
+});
 ```
 
 ### Options
