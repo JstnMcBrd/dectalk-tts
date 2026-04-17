@@ -72,7 +72,7 @@ Please see Chapter 2 of the [DECtalk guide PDF](docs/dtk_reference_guide.pdf) fo
 
 None of these options are hard-coded into this package, so you must format the request string yourself.
 
-(The DECtalk guide PDF was copied from the DECtalk 4.61 release download, which can be found [here](https://web.archive.org/web/20240226085720/https://theflameofhope.co/dectalkreader1/).)
+(The DECtalk guide PDF was copied from the DECtalk 4.61 release download, which can be found [here](https://dectalk.nu/#7).)
 
 ## Development
 

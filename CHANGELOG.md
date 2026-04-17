@@ -24,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fix broken Dectalk 4.61 release download link in README ([#11](https://github.com/JstnMcBrd/dectalk-tts/pull/11))
+- Replace DECtalk 4.61 download link in README ([#11](https://github.com/JstnMcBrd/dectalk-tts/pull/11), [#155](https://github.com/JstnMcBrd/dectalk-tts/pull/155))
 - Fix exports field in `package.json` ([#110](https://github.com/JstnMcBrd/dectalk-tts/pull/110))
 - Fix DECtalk capitalization ([#153](https://github.com/JstnMcBrd/dectalk-tts/pull/153))
 
@@ -42,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add README with explanation, usage guide, and disclaimer ([#1](https://github.com/JstnMcBrd/dectalk-tts/pull/1))
 - Add project code ([#1](https://github.com/JstnMcBrd/dectalk-tts/pull/1))
 - Add CommonJS import path ([#1](https://github.com/JstnMcBrd/dectalk-tts/pull/1))
-- Add Dectalk documentation PDF ([#1](https://github.com/JstnMcBrd/dectalk-tts/pull/1))
+- Add DECtalk documentation PDF ([#1](https://github.com/JstnMcBrd/dectalk-tts/pull/1))
 
 [Unreleased]: https://github.com/JstnMcBrd/dectalk-tts/compare/v1.0.1...HEAD
 [1.0.1]: https://github.com/JstnMcBrd/dectalk-tts/compare/v1.0.0...v1.0.1
