@@ -12,11 +12,11 @@
 
 ## About
 
-**dectalk-tts** is a simple package to interact with the **aeiou** Dectalk web API. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
+**dectalk-tts** is a simple package to interact with the **aeiou** DECtalk web API. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
 
-[Dectalk](https://github.com/dectalk/dectalk) is a text-to-speech engine originally created in the 1980s. Today, it is best known for [viral videos](https://www.youtube.com/watch?v=Hv6RbEOlqRo) of the game [Moonbase Alpha](https://store.steampowered.com/app/39000/Moonbase_Alpha/).
+[DECtalk](https://github.com/dectalk/dectalk) is a text-to-speech engine originally created in the 1980s. Today, it is best known for [viral videos](https://www.youtube.com/watch?v=Hv6RbEOlqRo) of the game [Moonbase Alpha](https://store.steampowered.com/app/39000/Moonbase_Alpha/).
 
-[aeiou](https://github.com/calzoneman/aeiou) is a third-party web API that makes interacting with Dectalk much easier.
+[aeiou](https://github.com/calzoneman/aeiou) is a third-party web API that makes interacting with DECtalk much easier.
 
 > <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
 >
@@ -68,11 +68,11 @@ dectalk('uuuuuuuuuu').then((output) => writeFileSync('output.wav', Buffer.from(o
 
 ### Options
 
-Please see Chapter 2 of the [Dectalk guide PDF](docs/dtk_reference_guide.pdf) for details on how to customize your requests. You can choose different voices, have Dectalk sing, and more!
+Please see Chapter 2 of the [DECtalk guide PDF](docs/dtk_reference_guide.pdf) for details on how to customize your requests. You can choose different voices, have DECtalk sing, and more!
 
 None of these options are hard-coded into this package, so you must format the request string yourself.
 
-(The Dectalk guide PDF was copied from the Dectalk 4.61 release download, which can be found [here](https://web.archive.org/web/20240226085720/https://theflameofhope.co/dectalkreader1/).)
+(The DECtalk guide PDF was copied from the DECtalk 4.61 release download, which can be found [here](https://web.archive.org/web/20240226085720/https://theflameofhope.co/dectalkreader1/).)
 
 ## Development
 

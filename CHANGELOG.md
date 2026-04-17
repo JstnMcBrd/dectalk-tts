@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix broken Dectalk 4.61 release download link in README ([#11](https://github.com/JstnMcBrd/dectalk-tts/pull/11))
 - Fix exports field in `package.json` ([#110](https://github.com/JstnMcBrd/dectalk-tts/pull/110))
+- Fix DECtalk capitalization ([#153](https://github.com/JstnMcBrd/dectalk-tts/pull/153))
 
 ## [1.0.1] - 2024-02-12
 
