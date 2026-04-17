@@ -1,10 +1,8 @@
-import { basename } from 'node:path';
-
-import { afterAll, describe, expect, it, vi } from 'vitest';
+import { afterAll, describe, expect, test, vi } from 'vitest';
 
 import dectalk from './index.js';
 
-describe(basename(import.meta.url), () => {
+describe('dectalk', () => {
 	const fetchMock = vi.fn<typeof fetch>();
 	vi.stubGlobal('fetch', fetchMock);
 
@@ -21,23 +19,23 @@ describe(basename(import.meta.url), () => {
 	} as Response;
 
 	afterAll(() => {
-		vi.restoreAllMocks();
+		vi.unstubAllGlobals();
 	});
 
-	it('should throw an error if given an empty or whitespace-only prompt', async () => {
+	test('should throw an error if given an empty or whitespace-only prompt', async () => {
 		await expect(dectalk('')).rejects.toThrow();
 		await expect(dectalk(' ')).rejects.toThrow();
 		await expect(dectalk('\t')).rejects.toThrow();
 		await expect(dectalk('\n')).rejects.toThrow();
 	});
 
-	it('should return the buffer if it receives a good response', async () => {
+	test('should return the buffer if it receives a good response', async () => {
 		fetchMock.mockResolvedValue(goodResponse);
 		const output = await dectalk('test');
 		expect(output).toEqual(goodResponseBuffer);
 	});
 
-	it('should throw an error if it receives a bad response', async () => {
+	test('should throw an error if it receives a bad response', async () => {
 		fetchMock.mockResolvedValue(badResponse);
 		await expect(dectalk('test')).rejects.toThrow();
 	});
