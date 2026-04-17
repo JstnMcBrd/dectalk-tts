@@ -2,7 +2,7 @@ import { afterAll, describe, expect, test, vi } from 'vitest';
 
 import dectalk from './index.js';
 
-describe('dectalk', () => {
+describe(dectalk, () => {
 	const fetchMock = vi.fn<typeof fetch>();
 	vi.stubGlobal('fetch', fetchMock);
 
