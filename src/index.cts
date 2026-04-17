@@ -1,5 +1,5 @@
 /**
- * @param text The text to send to the aeiou Dectalk API
+ * @param text The text to send to the aeiou DECtalk API
  * @returns An array buffer containing wav-encoded binary output
  * @throws If `text` is empty or only whitespace
  * @throws If the API returns a non-200 response
