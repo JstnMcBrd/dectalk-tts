@@ -22,7 +22,7 @@
 >
 > Please read the [usage guidelines](https://github.com/calzoneman/aeiou/blob/master/docs/usage-guidelines.md) of the API.
 
-## Prerequesites
+## Prerequisites
 
 This package has no production dependencies, and works with Node.js (`>=18`) or the browser.
 
