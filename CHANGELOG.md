@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **Breaking:** return `ArrayBuffer` (runtime-agnostic) instead of `Buffer` (Node.js-specific) ([#44](https://github.com/JstnMcBrd/dectalk-tts/pull/44))
-- Update README to include browser-compatiblity ([#44](https://github.com/JstnMcBrd/dectalk-tts/pull/44))
+- Update README to include browser-compatibility ([#44](https://github.com/JstnMcBrd/dectalk-tts/pull/44))
 - Use ISC license ([#121](https://github.com/JstnMcBrd/dectalk-tts/pull/121))
 - Clean up README ([#158](https://github.com/JstnMcBrd/dectalk-tts/pull/158))
 
@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace DECtalk 4.61 download link in README ([#11](https://github.com/JstnMcBrd/dectalk-tts/pull/11), [#155](https://github.com/JstnMcBrd/dectalk-tts/pull/155))
 - Fix exports field in `package.json` ([#110](https://github.com/JstnMcBrd/dectalk-tts/pull/110))
 - Fix DECtalk capitalization ([#153](https://github.com/JstnMcBrd/dectalk-tts/pull/153))
+- Fix typos ([#159](https://github.com/JstnMcBrd/dectalk-tts/pull/159))
 
 ## [1.0.1] - 2024-02-12
 
