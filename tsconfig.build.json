@@ -4,10 +4,11 @@
 	"exclude": ["**/*.test.*"],
 	"compilerOptions": {
 		"rootDir": "src",
-		
+
 		"declaration": true,
+		"noEmit": false,
 		"outDir": "dist",
-		
+
 		"isolatedDeclarations": true,
 	},
 }
